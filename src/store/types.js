@@ -1,0 +1,41 @@
+//  Getters
+export const GET_AUTH_TOKEN = 'auth/GET_AUTH_TOKEN'
+export const GET_AUTH_OBJECT = 'auth/GET_AUTH_OBJECT'
+export const GET_LOGIN_STATUS = 'auth/GET_LOGIN_STATUS'
+export const GET_USER = 'auth/GET_USER'
+
+export const GET_ALL_USERS = 'user/GET_ALL_USERS'
+export const GET_USERS_PAGINATION = 'user/GET_USERS_PAGINATION'
+
+export const GET_ALL_ROLES = 'role/GET_ALL_ROLES'
+
+//  Mutations
+export const SET_AUTH_TOKEN = 'auth/SET_AUTH_TOKEN'
+export const SET_AUTH_OBJECT = 'auth/SET_AUTH_OBJECT'
+export const SET_LOGIN_STATUS = 'auth/SET_LOGIN_STATUS'
+export const SET_USER = 'auth/SET_USER'
+
+export const SET_ALL_USERS = 'user/SET_ALL_USERS'
+
+export const SET_ALL_ROLES = 'role/SET_ALL_ROLES'
+
+//  Actions
+export const INIT_LOGIN_USER = 'auth/INIT_LOGIN_USER'
+export const INIT_REGISTER_USER = 'auth/INIT_REGISTER_USER'
+export const INIT_ACTIVATE_USER = 'auth/INIT_ACTIVATE_USER'
+export const INIT_SEND_RESET_PASSWORD_LINK = 'auth/INIT_SEND_RESET_PASSWORD_LINK'
+export const INIT_RESET_PASSWORD = 'auth/INIT_RESET_PASSWORD'
+export const INIT_FETCH_AUTH = 'auth/INIT_FETCH_AUTH'
+export const INIT_UPDATE_AUTH_PROFILE = 'auth/INIT_UPDATE_AUTH_PROFILE'
+export const INIT_UPDATE_AUTH_PASSWORD = 'auth/INIT_UPDATE_AUTH_PASSWORD'
+export const INIT_LOGOUT_USER = 'auth/INIT_LOGOUT_USER'
+export const INIT_FETCH_USER = 'auth/INIT_FETCH_USER'
+export const INIT_UPDATE_USER_PROFILE = 'auth/INIT_UPDATE_USER_PROFILE'
+
+export const INIT_FETCH_ALL_USERS = 'user/INIT_FETCH_ALL_USERS'
+export const INIT_STORE_USER = 'user/INIT_STORE_USER'
+export const INIT_UPDATE_USER_ROLE = 'user/INIT_UPDATE_USER_ROLE'
+export const INIT_UPDATE_USER_ACTIVE_STATUS = 'user/INIT_UPDATE_USER_ACTIVE_STATUS'
+export const INIT_DELETE_USER = 'user/INIT_DELETE_USER'
+
+export const INIT_FETCH_ALL_ROLES = 'role/INIT_FETCH_ALL_ROLES'
