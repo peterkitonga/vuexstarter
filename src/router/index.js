@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '../components/views/guest/Home'
 
 import {store} from '../store'
 import * as TYPES from '../store/types'
@@ -12,8 +12,8 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'home',
+      component: Home
     }
   ]
 })
