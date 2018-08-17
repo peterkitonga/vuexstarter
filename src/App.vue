@@ -1,23 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <auth-layout v-if="isAuthenticated"></auth-layout>
+    <guest-layout v-else></guest-layout>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import * as TYPES from './store/types'
+  import GuestLayout from './components/layouts/Guest'
+  import AuthLayout from './components/layouts/Auth'
+
+  export default {
+    name: 'App',
+    components: {
+      GuestLayout,
+      AuthLayout
+    },
+    computed: {
+      isAuthenticated: function () {
+        return this.$store.getters[TYPES.GET_LOGIN_STATUS];
+      }
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
