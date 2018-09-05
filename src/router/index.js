@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/views/guest/Home'
+import Login from '../components/views/guest/Login'
+import Register from '../components/views/guest/Register'
+import Forgot from '../components/views/guest/Forgot'
 
 import {store} from '../store'
 import * as TYPES from '../store/types'
@@ -12,8 +14,18 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
+    },
+    {
+      path: '/forgot',
+      name: 'forgot',
+      component: Forgot
     }
   ]
 })
