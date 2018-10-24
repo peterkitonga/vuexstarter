@@ -5,6 +5,13 @@ import App from './App'
 import router from './router'
 import {store} from './store'
 
+import VeeValidate from 'vee-validate'
+import VueIziToast from 'vue-izitoast'
+import 'izitoast/dist/css/iziToast.min.css'
+
+Vue.use(VeeValidate)
+Vue.use(VueIziToast, {position: 'topRight'})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
